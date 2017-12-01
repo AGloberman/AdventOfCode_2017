@@ -1,6 +1,6 @@
-package main
+package day1
 
-func captcha (input string) int {
+func Captcha (input string) int {
 	var sum, nextIndex int
 	for index := 0; index < len(input); index++  {
 		char := input[index] - 48
@@ -19,7 +19,7 @@ func captcha (input string) int {
 	return sum
 }
 
-func captcha2 (input string) int {
+func Captcha2 (input string) int {
 	var sum, nextIndex int
 	indexIncrement := int(len(input)) / 2
 	for index := 0; index < len(input); index++  {
